@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+
+    <script src="./firebase.js"></script>
+    <script src="./script.js"></script>
+
+    <title>Todo-List</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header-img">
+        <img src="./assets/bg-desktop-dark.jpg" alt="" />
+      </div>
+      <div class="all-items">
+        <div class="todo-items-container">
+          <div class="todo-title">
+            <div class="todo-text">TODO</div>
+            <div class="todo-title-img">
+              <img src="./assets/night-mode.png" alt="" />
+            </div>
+          </div>
+          <div class="todo-items-list-container">
+            <div class="check-box">
+              <img src="./assets/checkbox.png" alt="" />
+            </div>
+            <div class="todo-input">
+              <form onsubmit="addData(event)">
+                <input
+                  id="todo-input"
+                  type="text"
+                  placeholder="Create a New todo"
+                />
+              </form>
+            </div>
+          </div>
+          <div class="todo-items-wrapped">
+            
+          </div>
+
+          <div class="footer-items">
+            <div class="items-left">4 items left</div>
+            <div class="foote-items-all">
+              <span>All</span>
+              <span>Active</span>
+
+              <span>Company</span>
+            </div>
+            <div class="footer-items-clear">Clear Completed</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
